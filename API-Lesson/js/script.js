@@ -5,7 +5,7 @@ $(function(){
   $('#btn').on('click', function() {
     // 入力された都市名でWebAPIに天気情報をリクエスト
     $.ajax({
-      url: "https://api.openweathermap.org/data/2.5/weather?q=" + $('#cityname').val() + "&units=metric&appid=" + "fc2b24f96c69de4b5b53a28ef00eb1a6",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + $('#cityname').val() + "&units=metric&appid=" + API_KEY,
       dataType : 'jsonp',
     }).done(function (data){
       //通信成功
